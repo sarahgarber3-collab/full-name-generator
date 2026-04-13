@@ -18,10 +18,12 @@ public class FullNameApplication {
         System.out.print("Please enter your last name: ");
         String lastName = scan.nextLine();
 
-        System.out.print("Please enter a suffix if you have one: ");
+        System.out.print("Please enter a suffix if you have one, if not just hit enter: ");
         String suffix = scan.nextLine();
 
-        String fullName = firstName + middleName + suffix + lastName;
+
+        String fullName = firstName + " " + middleName + " " + suffix + " " + lastName;
+
         System.out.println(fullName);
 
 
