@@ -12,7 +12,7 @@ public class FullNameApplication {
         System.out.print("Please enter your first name: ");
         String firstName = scan.nextLine();
 
-        System.out.print("please enter your middle name: ");
+        System.out.print("please enter your middle name if you have one, if not just press enter: ");
         String middleName = scan.nextLine();
 
         System.out.print("Please enter your last name: ");
@@ -22,7 +22,7 @@ public class FullNameApplication {
         String suffix = scan.nextLine();
 
 
-        String fullName = firstName + " " + middleName + " " + suffix + " " + lastName;
+        String fullName = firstName.trim() + " " + middleName.trim() + "." + lastName.trim() + " , " + suffix.trim() + " ";
 
         System.out.println(fullName);
 
